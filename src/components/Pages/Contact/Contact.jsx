@@ -38,8 +38,8 @@ export const Contact = () => {
         serviceId,
         templateId,
         {
-          user_name: formData.fullName,
-          user_email: formData.email,
+          from_name: formData.fullName,
+          email_id: formData.email,
           message: formData.message,
         },
         publicKey
