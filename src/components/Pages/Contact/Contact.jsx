@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { IonIcon } from '@ionic/react';
 import { paperPlaneOutline } from 'ionicons/icons';
 import emailjs from '@emailjs/browser';
-
+import Alert from '@mui/material/Alert';
+import { Snackbar } from '@mui/material';
 
 export const Contact = () => {
   const serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
@@ -14,7 +15,9 @@ export const Contact = () => {
     email: '',
     message: '',
   });
+
   const [isFormValid, setIsFormValid] = useState(false);
+  const [alert, setAlert] = useState({ open: false, severity: 'info', message: '' });
 
   const handleChange = (e) => {
     setFormData({
@@ -22,7 +25,6 @@ export const Contact = () => {
       [e.target.name]: e.target.value,
     });
 
-    // check if form is valid
     const form = e.target.closest('form');
     setIsFormValid(form.checkValidity());
   };
@@ -30,9 +32,10 @@ export const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!isFormValid) {
-      alert('Please fill all the fields');
+      setAlert({ open: true, severity: 'warning', message: 'Please fill all the fields.' });
       return;
     }
+
     emailjs
       .send(
         serviceId,
@@ -45,17 +48,16 @@ export const Contact = () => {
         publicKey
       )
       .then(
-        (result) => {
-          console.log('Message sent successfully:', result.text);
+        () => {
+          setAlert({ open: true, severity: 'success', message: 'Message sent successfully!' });
           setFormData({
             fullName: '',
             email: '',
             message: '',
           });
-
         },
-        (error) => {
-          console.error('Failed to send message:', error.text);
+        () => {
+          setAlert({ open: true, severity: 'error', message: 'Failed to send message. Please try again.' });
         }
       );
   };
@@ -119,6 +121,18 @@ export const Contact = () => {
           </button>
         </form>
       </section>
+
+      {/* MUI Snackbar Alert */}
+      <Snackbar
+        open={alert.open}
+        autoHideDuration={5000}
+        onClose={() => setAlert({ ...alert, open: false })}
+        anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+      >
+        <Alert onClose={() => setAlert({ ...alert, open: false })} severity={alert.severity}>
+          {alert.message}
+        </Alert>
+      </Snackbar>
     </article>
   );
 };
