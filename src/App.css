@@ -406,6 +406,7 @@ main {
   /* color: var(--white-2); */
   background: linear-gradient(to right, hsl(220, 83%, 62%)3%, hsl(311, 35%, 50%) 60%, hsl(354, 60%, 62%) 97%);
   /* color: var(--gradient-color); */
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: var(--fs-3);
