@@ -41,8 +41,8 @@ export const Contact = () => {
         serviceId,
         templateId,
         {
-          from_name: formData.fullName,
-          email_id: formData.email,
+          user_name: formData.fullName,
+          user_email: formData.email,
           message: formData.message,
         },
         publicKey
