@@ -30,6 +30,7 @@ export const Contact = () => {
   };
 
   const handleSubmit = (e) => {
+    console.log(serviceId);
     e.preventDefault();
     if (!isFormValid) {
       setAlert({ open: true, severity: 'warning', message: 'Please fill all the fields.' });

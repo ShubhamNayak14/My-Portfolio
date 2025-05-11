@@ -11,59 +11,62 @@ export const ServicesData = [
   {
     img: webDev,
     title: 'Web Development',
-    desc: "Mostly I have strong web development skills, building responsive, user-friendly, and high-performance websites with a focus on functionality and efficiency.",
+    desc: "Experienced in building responsive and efficient websites using HTML, CSS, JavaScript, and React.",
   },
   {
     img: problem,
     title: 'Problem solver',
-    desc: "I have strong problem-solving skills using C++, with the ability to write efficient algorithms and optimize code for performance. I excel in tackling complex challenges through logical thinking and structured programming.",
+    desc: "Proficient in C++, focusing on efficient algorithms and optimizing code to solve complex problems.",
   },
   {
     img: figma1,
     title: 'UI Designer',
-    desc: "I have strong UI design skills, with a focus on aesthetics, usability, and user experience. I create intuitive, visually appealing interfaces that balance creativity with functionality for a seamless user experience.",
-  },
-  {
-    img: camera,
-    title: 'Photography',
-    desc: "I have a keen eye for photography, capturing visually compelling and well-composed shots with a strong sense of lighting and aesthetics.",
+    desc: "Expert in crafting intuitive, visually appealing interfaces with a focus on usability and functionality.",
   }, 
   {
     img: desiger,
     title: 'Designer',
-    desc: "I have strong design skills, creating visually appealing and functional designs that effectively communicate ideas and engage audiences.",
+    desc: "Experienced in creating functional and visually appealing designs that engage audiences.",
   },
 ];
 
 // Projects data
-import Photography_site from '@assets/image2.jpg';
-import weather from '@assets/image5.jpg';
-import Uiwebsite_1 from '@assets/photo1.jpeg';
-import Uiwebsite_2 from '@assets/photo2.jpg';
+import Photography_site from '@assets/camera-1.svg';
+import weather from '@assets/cloud-sun-rain.svg';
+import Uiwebsite_2 from '@assets/notepad-text.svg';
+import chat from '@assets/Bot.svg';
+import share from '@assets/target.svg';
 
 export const projectData = [
-  {
-    avatar: Photography_site,
-    name: 'Photography Website',
-    text: " 'DigiLens' is an innovative web project that combines modern design with functionality. The website features a clean, user-friendly interface, ensuring an intuitive experience for users. It showcases cutting-edge digital solutions, providing a seamless interaction from start to finish.\n\nThe project emphasizes accessibility and responsiveness, offering smooth navigation across devices. With a focus on both aesthetics and performance, DigiLens delivers a visually appealing platform that effectively highlights its key features and services.",
-    link: 'https://shubhamnayak14.github.io/digilens/',
+   {
+    avatar: share,
+    name: 'WormHole File Sharing',
+    text: 'My project is a secure wormhole-based file-sharing website that enables fast, peer-to-peer transfer of files and messages using one-time codes. It leverages the Magic Wormhole protocol for encrypted, direct communication without storing data on servers.\nBuilt using React for the frontend, Tailwind CSS for styling, and Python with Magic Wormhole for the backend, it ensures both performance and security.\nThe modern, responsive UI allows users to upload files, generate secure codes, and track progress in real time. With no login required and full end-to-end encryption, the platform offers a seamless and private file-sharing experience.',
+    link: 'https://worm-hole-web.vercel.app/',
   },
+  {
+    avatar: chat,
+    name: 'Ai ChatBot',
+    text:'HeyAI is an intelligent chatbot designed to deliver fast, conversational, and context-aware responses in real-time. Built using React for the frontend, Tailwind CSS for a modern UI, and powered by OpenAI GPT model on the backend, HeyAI offers a smooth and interactive user experience.\nIt features voice input/output, emoji support, file attachments, and PDF chat export, making conversations more dynamic and accessible. With a clean, responsive design and smart natural language understanding, HeyAI is ideal for answering questions, casual chatting, and assisting with daily tasks—truly bringing conversations to life with the pulse of intelligence.',
+    link: 'https://chatbot-frontend-theta-gules.vercel.app/https://chatbot-frontend-theta-gules.vercel.app/',
+  },
+ 
   {
     avatar: weather,
     name: 'Weather Forecasting App',
-    text: 'The "WeatherApp" is a responsive web application designed to provide real-time weather updates. With an intuitive and user-friendly interface, it allows users to easily check weather conditions by simply entering their location. The app presents accurate and detailed weather information in a clean, organized format.\n\nThe project leverages external APIs to fetch live weather data and displays it in a visually appealing way. It prioritizes performance, ensuring smooth interaction and quick data retrieval, making it a practical tool for anyone needing weather updates on the go.',
+    text:'"WeatherApp" is a responsive web app providing real-time weather updates with an intuitive interface. It fetches live data via external APIs, presenting accurate weather information in a clean format. The app prioritizes performance, ensuring smooth interactions and quick data retrieval for on-the-go weather checks.',
     link: 'https://shubhamnayak14.github.io/WeatherApp/',
   },
-  {
-    avatar: Uiwebsite_1,
-    name: 'Modern Technology UI Design',
-    text: 'This UI design project is a sleek and modern interface created to deliver a seamless user experience. It showcases intuitive navigation, clean visuals, and a user-friendly layout. Every element is strategically placed to ensure ease of use and engagement.\n\nThe design focuses on aesthetic appeal while maintaining functional clarity, ensuring users can easily interact with the platform. With a polished, minimalistic approach, the project demonstrates how thoughtful UI design enhances both usability and visual appeal, making it a perfect example of modern interface design',
-    link: 'https://www.figma.com/proto/hDNeJb2y4a2blqxEdDWxpn/Project-1?node-id=84-754&starting-point-node-id=84%3A754',
+   {
+    avatar: Photography_site,
+    name: 'Photography Website',
+    text: 'DigiLens is an innovative web project with a clean, user-friendly interface, offering cutting-edge digital solutions. It emphasizes accessibility, responsiveness, and smooth navigation, providing a seamless experience across devices while showcasing key features and services with a focus on aesthetics and performance.',
+    link: 'https://shubhamnayak14.github.io/digilens/',
   },
   {
     avatar: Uiwebsite_2,
     name: 'Resigation Page UI Design',
-    text: 'This UI design project features a clean and user-friendly registration form, carefully crafted for simplicity and ease of use. The design focuses on clarity, with clearly defined fields and an intuitive flow that guides the user effortlessly through the process.\n\nThe form s minimalistic design ensures a smooth and efficient registration experience, eliminating unnecessary complexity. Thoughtful color choices, ample spacing, and clear labeling make it visually appealing while maintaining high functionality and accessibility. This project highlights how well-designed forms can enhance user interaction and streamline data entry.',
+    text: 'This project features a clean, user-friendly registration form focused on simplicity and ease of use. With clearly defined fields and an intuitive flow, the minimalistic design ensures a smooth registration experience. Thoughtful color choices, spacing, and clear labeling enhance both aesthetics and functionality, making data entry efficient and accessible.',
     link: 'https://www.figma.com/proto/fHiUNvnmJkqdOVjZq30YPN/Registration-Form?node-id=26-298&starting-point-node-id=26%3A298',
   },
 ];
@@ -81,6 +84,12 @@ import figma from '@assets/figma.svg';
 import dbms from '@assets/dbms.svg'
 import p from '@assets/p.svg';
 import editor from '@assets/editor.svg';
+import behance from '@assets/behance.svg';
+import unsplash from '@assets/unsplash.svg';
+import tail from '@assets/tail.svg';
+import css from '@assets/css.svg';
+import html from '@assets/html5.svg';
+import reactjs from '@assets/react.svg';
 
 export const languageData = [
   cpp,
@@ -90,11 +99,17 @@ export const languageData = [
   github,
   jupyter,
   vsCode,
-  windows,
+  adobelightroom,
   visio,
+  windows,
   p,
   editor,
-  adobelightroom
+  unsplash,
+  behance,
+  html,
+  css,
+  reactjs,
+  tail,
 ];
 
 // ==================== Resume ======================
@@ -112,9 +127,11 @@ export const EducationData = [
   },
   {
     title: 'Kalinga Institute of Industrial Technology, Bhubaneswar',
-    date: '2021 — current',
+    date: '2021 — 2025',
     description:
-      'Currently pursuing my B.Tech in Electronics & Computer Science and Engineering. Final year student.',
+      'B.Tech in Electronics & Computer Science and Engineering. CGPA: 8.02', 
+   
+  
   },
 ];
 
@@ -147,19 +164,23 @@ export const ExperienceData = [
 export const SkillsData = [
   {
     title: 'Web development',
-    value: 80,
+    value: 70,
   },
   {
     title: 'SQL / DBMS',
-    value: 70,
+    value: 50,
   },
   {
     title: 'Problem Solving',
-    value: 70,
+    value: 60,
   },
   {
     title: 'C++',
-    value: 70,
+    value: 60,
+  },
+   {
+    title: 'UI/UX Designing',
+    value: 50,
   },
 ];
 
@@ -172,19 +193,33 @@ import image5 from '@assets/image5.jpg';
 import image6 from '@assets/image6.jpg';
 import image7 from '@assets/image7.jpg';
 import image8 from '@assets/image8.jpg';
+import image9 from '@assets/image9.jpg';
+import image10 from '@assets/image10.jpg';
 
 export const ProjectListData = [
-  {
-    title: 'Photography Website',
-    category: 'HTML & CSS',
-    img:image2,
-    link: 'https://shubhamnayak14.github.io/digilens/',
+   {
+    title: 'WormHole File Sharing',
+    category: 'React JS',
+    img: image10,
+    link: 'https://worm-hole-web.vercel.app/',
+  },
+   {
+    title: 'Ai ChatBot',
+    category: 'React JS',
+    img: image9,
+    link: 'https://chatbot-frontend-theta-gules.vercel.app/',
   },
   {
     title: 'Weather Forecasting Site',
     category: 'React JS',
     img: image5,
     link: 'https://shubhamnayak14.github.io/WeatherApp/',
+  },
+  {
+    title: 'Photography Website',
+    category: 'HTML & CSS',
+    img:image2,
+    link: 'https://shubhamnayak14.github.io/digilens/',
   },
   {
     title: 'TO-DO List',

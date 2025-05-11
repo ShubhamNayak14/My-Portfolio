@@ -8,6 +8,7 @@ import {
   logoTwitter,
   logoGithub,
   chevronDown,
+  logoBehance,
 } from 'ionicons/icons';
 import { useState } from 'react';
 
@@ -69,7 +70,7 @@ export const Sidebar = () => {
 
             <div className='contact-info'>
               <p className='contact-title'>Birthday</p>
-              <time dateTime='1982-06-23'>14 April, 2002</time>
+              <time dateTime='1982-06-23'>XX April, 2002</time>
             </div>
           </li>
 
@@ -94,11 +95,11 @@ export const Sidebar = () => {
             </a>
           </li>
 
-          {/* <li className='social-item'>
-            <a href='https://x.com/AnimeshMaiti7' className='social-link' target='_blank'>
-              <IonIcon icon={logoTwitter}></IonIcon>
+          <li className='social-item'>
+            <a href='https://www.behance.net/shubhamnayak20' className='social-link' target='_blank'>
+              <IonIcon icon={ logoBehance}></IonIcon>
             </a>
-          </li> */}
+          </li>
 
           <li className='social-item'>
             <a href='https://github.com/ShubhamNayak14' className='social-link' target='_blank'>
